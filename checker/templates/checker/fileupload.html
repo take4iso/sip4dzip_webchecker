@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>SIP4D-ZIP WebChecker</title>
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="titleblock">
+            <div class="title">SIP4D-ZIP WebChecker</div>
+        </div>
+        <div class="block">
+            <h3>SIP4D-ZIPのファイルフォーマットをチェックします</h3>
+            <div class="block">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <p>{{ form.filefield }}</p>
+                    <p><input type="submit" value="チェック開始"></p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

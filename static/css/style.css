@@ -1,0 +1,13 @@
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.titleblock {
+    background-color: #E0E0E0;
+}
+.block {
+    margin: 10px;
+    padding: 10px;
+}
+
